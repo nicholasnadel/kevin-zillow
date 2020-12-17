@@ -1,0 +1,17 @@
+{
+  "name": "Chapman.edu - Cascade Extender",
+  "version": "0.0.12",
+  "manifest_version": 2,
+  "description": "Cascade Extension by Chapman.edu",
+  "homepage_url": "https://chapman.edu",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Cascade Extender",
+    "default_icon": "cascade.png"
+  },
+  "permissions": ["activeTab"],
+  "web_accessible_resources": ["cascade.js"]
+}
