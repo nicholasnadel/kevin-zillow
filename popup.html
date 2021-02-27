@@ -1,0 +1,110 @@
+<!doctype html style="min-width:400px;">
+<html>
+
+<head>
+  <title>Cascade - The Missing Menu</title>
+  <link rel="stylesheet" href="mvp.css">
+  <script src="inject.js"></script>
+  <!-- <script src="popup.js"></script> -->
+  <style>
+    body {
+      min-width: 300px;
+    }
+    h1 {
+      font-size: 14px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+    ul {
+      list-style: none;
+      margin-left: 0;
+      padding-left: 0;
+    }
+    button {
+      padding: .5rem 1rem;
+      margin: 0.2rem 0;
+    }
+    label {
+      font-weight: bold;
+    margin-bottom: 0.2rem;
+    padding-top: .5rem;
+    }
+    input#api_key {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    
+    }
+    .inline {
+      display: inline-flex;
+    }
+    svg#info {
+    max-width: 12px;
+    display: inline;
+    max-height: 12px;
+    margin-left: 5px;
+    bottom: -3px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  padding: 5px;
+}
+  </style>
+
+</head>
+
+<body>
+  <div class="container" style="margin-left: 25px; margin-right: 25px">
+  <h1>Cascade - The Missing Menu</h1>
+
+  <details>
+    <summary>Settings</summary>
+    <label for="api_key">
+      <a data-text="Thanks for hovering! I'm a tooltip" 
+      class="tooltip" href="https://www.hannonhill.com/cascadecms/latest/cascade-basics/account-settings.html#UserApiKey">API Key 
+      
+      <div class="tooltip">
+      
+      <svg id="info" xmlns="http://www.w3.org/2000/svg" width="100px" height="100px" viewBox="0 0 100 100">
+        <path d="M50.433,0.892c-27.119,0-49.102,21.983-49.102,49.102s21.983,49.103,49.102,49.103s49.101-21.984,49.101-49.103S77.552,0.892,50.433,0.892z M59,79.031C59,83.433,55.194,87,50.5,87S42,83.433,42,79.031V42.469c0-4.401,3.806-7.969,8.5-7.969s8.5,3.568,8.5,7.969V79.031z M50.433,31.214c-5.048,0-9.141-4.092-9.141-9.142c0-5.049,4.092-9.141,9.141-9.141c5.05,0,9.142,4.092,9.142,9.141C59.574,27.122,55.482,31.214,50.433,31.214z"/>
+        </svg></a>
+        <span class="tooltiptext">Enables republish, Page metrics such as Last Pulished Date<a href="https://www.hannonhill.com/cascadecms/latest/cascade-basics/account-settings.html#UserApiKey">Command-Click for Documentation</a></span>
+      </div>
+      </label>
+    <input name="api_key" id="api_key" type="password">
+    <button href="#" id="api_key_save">Save API Key</button>
+  
+</details>
+
+
+  <ul>
+    <li>
+      <button id="edit-page">Edit Page</button></li>
+    <li>
+      <button id="publish-page">Republish Page</button>
+    </li>
+  </ul>
+</div>
+</body>
+
+</html>

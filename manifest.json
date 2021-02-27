@@ -1,17 +1,18 @@
 {
-  "name": "Chapman.edu - Cascade Extender",
+  "name": "MLS 2 Zillow",
   "version": "0.0.12",
   "manifest_version": 2,
-  "description": "Cascade Extension by Chapman.edu",
-  "homepage_url": "https://chapman.edu",
+  "description": "Search MLS address on Zillow",
+  "homepage_url": "https://google.com",
   "background": {
     "scripts": ["background.js"],
     "persistent": true
   },
   "browser_action": {
-    "default_title": "Cascade Extender",
+    "default_title": "MLS 2 Zillow",
     "default_icon": "cascade.png"
   },
   "permissions": ["activeTab"],
-  "web_accessible_resources": ["cascade.js"]
+  "web_accessible_resources": ["cascade.js"],
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
 }
